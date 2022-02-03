@@ -1,0 +1,65 @@
+/*package com.example.scheduler_kcell.SpringSecurityInMemory;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class controller_security {
+    @GetMapping("/hello")
+    public String hello(){
+        return "<h2> Hey, everyone! </h2>";
+    }
+
+    @GetMapping("/user")
+    public String user(){
+        String hi = "<h2> Hey, user! </h2>";
+        return hi + "/user/scheduler";
+    }
+
+    @GetMapping("/admin")
+    public String admin(){
+        return "<h2> Hey, admin! </h2>";
+    }
+}*/
+
+
+
+
+/*package com.example.scheduler_kcell.SpringSecurityInMemory;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.password.NoOpPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
+@EnableWebSecurity
+public class SecurityConfig extends WebSecurityConfigurerAdapter{
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception{
+        auth.inMemoryAuthentication()
+                .withUser("Adil")
+                .password("java")
+                .roles("admin")
+                .and()
+                .withUser("User")
+                .password("user")
+                .roles("user");
+    }
+
+    @Override
+    protected void configure(HttpSecurity http) throws Exception{
+        http.authorizeRequests()
+                .antMatchers("/hello").permitAll()
+                .antMatchers("/admin").hasRole("admin")
+                .antMatchers("/user").hasAnyRole("user", "admin")
+                .and().formLogin();
+    }
+
+    @Bean
+    public PasswordEncoder encoder(){
+        return NoOpPasswordEncoder.getInstance();
+    }
+}*/

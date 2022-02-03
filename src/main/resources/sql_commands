@@ -1,0 +1,38 @@
+CREATE TABLE `bot`.`roles` (
+  `id` INT NOT NULL,
+  `email` VARCHAR(45) NULL,
+  `first_name` VARCHAR(45) NULL,
+  `last_name` VARCHAR(45) NULL,
+  `password` VARCHAR(90) NULL,
+  `role` VARCHAR(45) NULL,
+  `status` VARCHAR(45) NULL,
+PRIMARY KEY (`id`));
+
+
+
+CREATE TABLE `bot`.`scheduler` (
+  `id` INT NOT NULL,
+  `title` VARCHAR(45) NULL,
+  `date` VARCHAR(45) NULL,
+  `priority` VARCHAR(45) NULL,
+  `description` VARCHAR(45) NULL,
+PRIMARY KEY (`id`));
+
+
+
+INSERT INTO `bot`.`roles` (`id`, `email`, `first_name`, `last_name`, `password`, `role`, `status`) VALUES ('1', 'admin@mail.com', 'admin', 'admin', '$2a$12$AU951iduBdXO/x/njEyfsuVgXvwuF9qBSsMGpvjP2fuLZtE4gnQF2', 'ADMIN', 'ACTIVE');
+INSERT INTO `bot`.`roles` (`id`, `email`, `first_name`, `last_name`, `password`, `role`, `status`) VALUES ('2', 'user@mail.com', 'user', 'user', '$2a$12$dkJVG4i4yoe03fj9AvkweO9.8S3Jo0reJatVSmv96gt2sHNuIFPt6', 'USER', 'BANNED');
+
+
+
+INSERT INTO `bot`.`scheduler` (`id`, `title`, `date`, `priority`, `description`) VALUES ('1', 'Test', '2/3/2022', 'high', 'test1');
+INSERT INTO `bot`.`scheduler` (`id`, `title`, `date`, `priority`, `description`) VALUES ('2', 'Test2', '2/4/2022', 'low', 'test2');
+
+
+
+
+--- application.properties ---
+spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+spring.jpa.properties.hibernate.format_sql=true
