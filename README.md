@@ -2,7 +2,7 @@
 
 ## Images
 ```
-GET
+<h1>GET</h1>
 ```
 ![get](/imgs/get.PNG)
 ![get](/imgs/getAuth.PNG)
