@@ -3,7 +3,7 @@
 ## Images
 
 ```
-GET
+----- GET -----
 ```
 ![get](/imgs/get.PNG)
 ![get](/imgs/getAuth.PNG)
@@ -11,7 +11,7 @@ GET
 
 
 ```
-MYSQL
+----- MYSQL -----
 ```
 ![mysql](/imgs/scheduler.PNG)
 ![mysql2](/imgs/role.PNG)
@@ -19,14 +19,14 @@ MYSQL
 
 
 ```
-POST
+----- POST -----
 ```
 ![save](/imgs/insert.PNG)
 
 
 
 ```
-PUT
+----- PUT -----
 ```
 ![upd1](/imgs/update.PNG)
 ![upd2](/imgs/updateAfter.PNG)
@@ -34,7 +34,7 @@ PUT
 
 
 ```
-DELETE
+----- DELETE -----
 ```
 ![del](/imgs/delete.PNG)
 ![delresult](/imgs/getAfterDelete.PNG)
