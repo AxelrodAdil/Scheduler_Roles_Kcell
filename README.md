@@ -1,6 +1,7 @@
 # Scheduler_Roles_Kcell
-**Created a scheduler with Spring Boot, Spring Security (roles), REST API, MYSQL database. Created an API for adding, changing, deleting, search by id. A schedule has a title, date, priority, and description. 
-To run a Springboot application, you will need mysql with "bot" database. All sql queries located here.**
+**Created a scheduler with Spring Boot, Spring Security (roles), REST API, MYSQL database. Created an API for adding, changing, deleting, search by id. A schedule has a title, date, priority, and description.**
+
+**To run a Springboot application, you will need mysql with "bot" database. All sql queries located here.**
 
 ## Images
 
