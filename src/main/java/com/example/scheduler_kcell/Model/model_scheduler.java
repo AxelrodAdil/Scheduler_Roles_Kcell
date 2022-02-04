@@ -26,7 +26,7 @@ public class model_scheduler {
     }
 
     @Id
-    @GeneratedValue
+    //@GeneratedValue
     public Long getId() {
         return id;
     }
