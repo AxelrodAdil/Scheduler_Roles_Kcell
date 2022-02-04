@@ -1,13 +1,14 @@
 # Scheduler_Roles_Kcell
 
 ## Images
-<h1>
+
 ```
 GET
 ```
-</h1>
 ![get](/imgs/get.PNG)
 ![get](/imgs/getAuth.PNG)
+
+
 
 ```
 MYSQL
@@ -15,16 +16,22 @@ MYSQL
 ![mysql](/imgs/scheduler.PNG)
 ![mysql2](/imgs/role.PNG)
 
+
+
 ```
 POST
 ```
 ![save](/imgs/insert.PNG)
+
+
 
 ```
 PUT
 ```
 ![upd1](/imgs/update.PNG)
 ![upd2](/imgs/updateAfter.PNG)
+
+
 
 ```
 DELETE
